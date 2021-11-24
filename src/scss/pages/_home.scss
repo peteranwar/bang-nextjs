@@ -1,0 +1,209 @@
+// Home Page
+.home-page{
+    min-height: 100vh;
+    .main-header{
+       span{
+           color: $primary-color;
+       }
+    }
+   .box-container{
+       box-shadow: 0 0 6px 0px #e9e5e5;
+       border-radius: 15px;
+       margin-right: 3rem;
+       margin-top: 7rem;
+       margin-bottom: 7rem;
+       position: relative;
+       .content{
+           padding-top: 6rem;
+           z-index: 55;
+           position: relative;
+           background-color: white;
+       }
+       .title{
+           color: $primary-color;
+           font-size: 26px;
+           font-weight: bold;
+       }
+       .description{
+           color: $text-color;
+           font-size: 16px;
+       }
+
+       .aed{
+           color: white;
+           font-size: calc($large-heading - 8px);
+           background-color: darken($primary-color, 10);
+           position: absolute;
+           top: 1rem;
+           left: -1rem;
+           padding: .2rem 1.5rem;
+           &::before{
+               content: '';
+               position: absolute;
+               width: 15px;
+               height: 15px;
+               background-color: darken($primary-color, 30);
+               bottom: -15px;
+               left: 1px;
+               -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+               clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+               transform: rotate(270deg);
+           }
+       }
+
+       .progress-container{
+           width: 160px;
+           height: 160px;
+           background: #eee;
+           border-radius: 50%;
+           position: absolute;
+           overflow: hidden;
+           top: -15%;
+           right: calc(50% - 80px);
+           .progress-bar{
+               background-color: $primary-color;
+                height: 20%;
+           }
+           .content{
+            width: 140px;
+            height: 140px;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $primary-color;
+            border-radius: 50%;
+
+            .text{
+                 border-radius: 50%;
+                 background-color: white;
+                 position: absolute;
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%, -50%);
+                 color: $primary-color;
+                 width: 100px;
+                 height: 100px;
+                 box-shadow: -1px 3px 6px #dad6d6;
+                 font-size: 18px;
+                 p{
+                     font-size: 12px;
+                     color: $text-color;
+                 }
+             }
+
+           }
+       }
+
+     // Style count Container
+       .count-container{
+           background-color: darken($primary-color, 20px);
+           color: white;
+           position: absolute;
+           right: -36px;
+           top: calc(50% - 150px);
+           width: 180px;
+           height: 300px;
+           border-radius: 0 150px 150px 0; 
+           align-items: flex-end;
+           z-index: 1;
+           padding-right: .8rem;
+
+           .plus, .minus{
+               background: $primary-color;
+               position: absolute;
+               right: -.1rem;
+               border: 2px solid white;
+               width: 30px;
+               height: 30px;
+               border-radius: 50%;
+               text-align: center;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               cursor: pointer;
+               @include easeInOut;
+               &:hover{
+                 background: lighten($primary-color, 10);
+               }
+            }
+            .plus{
+               top: 30%;
+           }
+
+           .minus{
+            bottom: 30%;
+        }
+       }
+
+    // style add-to
+    .add-to{
+        position: absolute;
+        right: 1rem;
+        height: 100px;
+        top: calc(50% - 50px);
+        .add-to-cart, .add-to-fav{
+            background-color: $primary-color;
+            height: 45px;
+            width: 40px;
+            border-radius: 7px;
+            margin: .5rem 0;
+            padding: .5rem 0;
+            cursor: pointer;
+        }
+        .add-to-fav{
+            background-color: darken($primary-color, 10);
+        }
+    }
+   }
+
+
+   @include md{
+    .box-container{
+        .content{
+            background: none;
+        }
+       .progress-container{
+           top: -17%;
+       }
+        .aed{
+            top: 5rem;
+        }
+        .add-to{
+            top: 1rem;
+            width: 100px;
+            height: 50px;
+
+        }
+
+        .count-container{
+           position: static;
+           background: none;
+           color: $primary-color;
+           width: 150px;
+           height: auto;
+           margin: auto;
+           padding-right: 0rem;
+           .plus, .minus{
+               position: static;
+           }
+        }
+
+        button{
+            border-radius: 25px;
+        }
+ 
+ 
+       
+ 
+ 
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+      .add-to{
+          width: auto !important;
+      }
+  }
+}
