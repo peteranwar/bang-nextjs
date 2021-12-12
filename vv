@@ -1,0 +1,51 @@
+# Domain website banking
+NEXT_PUBLIC_API_DOMAIN_URL=https://localhost:3000
+# CDN
+NEXT_PUBLIC_CDN_URL=storage.faydety.com
+NEXT_PUBLIC_DEVELOPMENT_CDN_URL=development-storage.faydety.dev
+# Backend API
+NEXT_PUBLIC_API_URL=https://development-backend.faydety.dev/api/v1
+NEXT_PUBLIC_BANKING_API_URL=https://development-backend.faydety.dev/api/v1/banking
+NEXT_PUBLIC_APP_API_URL=https://development-backend.faydety.dev/api/v1
+#Insurance Link
+NEXT_PUBLIC_BANKING_PRODUCTS_LINK=https://development-insurance.faydety.dev/
+# third party tools
+NEXT_PUBLIC_GOOGLE_ANALYTICS=
+NEXT_PUBLIC_GOOGLE_TAG_MANAGER=
+NEXT_PUBLIC_BASE_APP_API_URL=https://development-backend.faydety.dev/api/v1
+# Micro Services
+#NEXT_PUBLIC_FX_DOMAIN_URL=https://fx-development.faydety.dev
+#NEXT_PUBLIC_FX_URL=https://fx-development.faydety.dev/api/v1
+NEXT_PUBLIC_FX_DOMAIN_URL=https://faydety-fx-service-development-3krvg.ondigitalocean.app
+NEXT_PUBLIC_FX_DOMAIN=faydety-fx-service-development-3krvg.ondigitalocean.app
+NEXT_PUBLIC_FX_URL=https://faydety-fx-service-development-3krvg.ondigitalocean.app/api/v1
+NEXT_PUBLIC_CMS_URL=https://cms.faydety.com
+# Analyzer
+NEXT_PUBLIC_ANALYZE=false
+
+
+--- dash
+# Development
+REACT_APP_BACKEND_LINK = https://development-backend.faydety.dev/api/v1
+SKIP_PREFLIGHT_CHECK=true
+REACT_APP_I18N_CONFIG_KEY=en
+PUBLIC_URL=/
+REACT_APP_API_EDITOR_KEY= hvgly72bzi9ay5mxazv5ozlq72b3up6ij2e9tp13eu6feiud
+REACT_APP_BACKEND_CORES= https://cors.faydety.dev/
+REACT_APP_MY_FATOORAH= https://api.myfatoorah.com/v2
+REACT_APP_MY_FATOORAH_TOKEN= "Bearer 39OMW0idIg0-DWi3PrL17PdqlT5wz8UqpNq5hjBkQbpc_bB6t7vUBhaE355nLjoQQHXFsfKy23eNF1iWG5o-dckLl4il0rX0GQMsvLNLR9VUeLZXq_2YAEe76GVkcN328RkBPJA_tmg3g1C9aP1B_7S3-3T3NxAUmXPVQH8MhPnN51dhc6Vh9iaSXG4wb7Hcm_mIAgoyKd30dHWw2_e19epRJxg1xSv-Lasiv8YpqrBHI_FuNa9te1UDGzeCphhzu2ZfbiI9xysbQTA77ZEcln58tUjoNLCtYQV_QT0oIkzfAczRrmFTt_QzFAL9w5iipK50kLBGnRiCrQktJ8DA8JIHNEGKl8BpmSoPAVWQT7XkKxFlnk25pMfZutQZ6V3BVTFPooN0sT6t0Zu_-1uSdh9WZf4vDTf-9jND3v6roc-_6V0UUkaIj8jbAaFusyNaL1BUQb8QqME1Ns04dU2UH9piPzG8fuM62DMGKVre8MmGb6XIwA9XiRwM6RfhfAKnnJueBJ-s1MHXDtHmIHXOUZ6xbn0WFcIfpF8s7ofsqx-gh2e6pBj9Qcysci6izUpRXMUTTKUIWg2nnYnNM9AY_jCmKDEDaL_b-ONOm_azi5A3WGVYATRExm38jMg_zbm4PKu5aIASFdvRnoHPYVIqdIB9HFrWYa8vtBPXXDc6syBOevlz
+
+
+--insurance
+
+## Micro Services
+NEXT_PUBLIC_CMS_URL=https://cms.faydety.com/
+NEXT_PUBLIC_APP_API_URL=https://development-backend.faydety.dev/api/v1/insurance
+NEXT_PUBLIC_BASE_APP_API_URL=https://development-backend.faydety.dev/api/v1
+NEXT_PUBLIC_BANKING_PRODUCTS_LINK=https://www.faydety.com
+NEXT_PUBLIC_NODE_ENV=development
+## CDN
+NEXT_PUBLIC_DEVELOPMENT_CDN_URL=development-storage.faydety.dev
+NEXT_PUBLIC_CDN_URL=storage.faydety.com
+
+NODE_ENV=development
